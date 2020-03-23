@@ -68,7 +68,7 @@ h1, p {
 
 .menu-items h3 {
   color: white;
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0.5rem 0.5rem;
@@ -77,13 +77,21 @@ h1, p {
   width: 30%
 }
 
+.menu-items h4 {
+  color: yellow;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  text-transform: uppercase
+}
+
 .menu-items > h3:hover {
   border-bottom: none;
   background-color: rebeccapurple;
   padding-left: 1.5rem;
   margin: 0.3rem 0;
   cursor: pointer;
-  width: 100%
+  width: 60%
 }
 
 .close-modal {
