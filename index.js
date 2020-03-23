@@ -11,7 +11,7 @@ import './style.css';
 class App extends Component {
   state = {
     name: 'Yinu',
-    modalOpen: false,
+    modalOpen: true,
   }
 
   toggleModal = () => {

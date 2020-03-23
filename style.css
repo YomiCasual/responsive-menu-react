@@ -61,6 +61,7 @@ h1, p {
   justify-content: space-around;
   padding: 2rem;
   margin: 5rem 0;
+  width: 90%;
   /* width: 90%; */
 }
 
@@ -71,15 +72,18 @@ h1, p {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 0.5rem 0.5rem;
-  width: 20vw;
+  border-bottom: 2px solid chocolate;
   transition: all 1s ease-in-out;
+  width: 30%
 }
-.menu-items h3:hover {
+
+.menu-items > h3:hover {
+  border-bottom: none;
   background-color: rebeccapurple;
   padding-left: 1.5rem;
   margin: 0.3rem 0;
   cursor: pointer;
-  width: 80vw;
+  width: 100%
 }
 
 .close-modal {
