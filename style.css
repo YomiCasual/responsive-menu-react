@@ -101,7 +101,60 @@ h1, p {
 }
 
 .container {
+  display: flex;
   height: 90vh;
+  width: 100%;
   background-color: rebeccapurple;
-  width: 100vw
+  align-items: space-around;
+  justify-content: center;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.sub-container:hover + .sub-container2 {
+  
+  opacity: 0;
+}
+
+.sub-container:hover .logo, .sub-container:hover .header {
+  transform: translateX(300px) rotate(360deg);
+}
+
+.sub-container:hover .header {
+  color: coral
+}
+.logo {
+  height: 20rem;
+  transition: all 1s ease-in-out;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+.header {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  transition: all 1s ease-in-out;
+  margin-left: 6rem;
+}
+
+.sub-container2 {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+  padding: 5rem 10rem;
+  transition: all 1s ease-in-out;
+}
+
+.sub-container2 p {
+  line-height: 1.5rem;
+  font-weight: 800
 }
