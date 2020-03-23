@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  font-family: helvetica
+}
+h1, p {
+  font-family: Lato;
+}
+
+.navbar {
+  background: rebeccapurple;
+  padding: 1rem;
+}
+
+.navbar-menu {
+  width: 2.3rem;
+  cursor: pointer;
+}
+
+.navbar-bar {
+  background-color: yellow;
+  height: 0.3rem;
+  margin: 0.25rem;
+  transition: 0.5s all ease-in-out
+}
+
+.navbar-menu:hover .navbar-bar:first-child {
+  transform: translateY(18px)  skewY(20deg)
+}
+.navbar-menu:hover .navbar-bar:nth-child(2) {
+  visibility: hidden;
+  transform: rotateY(90deg)
+}
+.navbar-menu:hover .navbar-bar:nth-child(3) {
+  transform: skewY(-20deg)
+}
+
+
+.menu-modal {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  transform: translateX(-100%) rotateX(270deg);
+  /* transform: rotateY(-180deg); */
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.5s ease-in-out
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+  margin: 5rem 0;
+  /* width: 90%; */
+}
+
+
+.menu-items h3 {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.5rem 0.5rem;
+  width: 20vw;
+  transition: all 1s ease-in-out;
+}
+.menu-items h3:hover {
+  background-color: rebeccapurple;
+  padding-left: 1.5rem;
+  margin: 0.3rem 0;
+  cursor: pointer;
+  width: 80vw;
+}
+
+.close-modal {
+  background-color: rebeccapurple;
+  height: 2rem;
+  margin: 3rem 5rem 0 0;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out
+}
+
+.close-modal:hover {
+  cursor: pointer;
+  background-color: chocolate
+}
+
+.container {
+  height: 90vh;
+  background-color: rebeccapurple;
+  width: 100vw
+}
