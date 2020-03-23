@@ -12,7 +12,7 @@ export default () => (
   <p><span>Front-End Developer =></span>( Javascript, React, Gatsby, Python )</p>
   <p><span>Graphic Designer =></span>( Coreldraw, Photoshop )</p>
   <p><span>UI Designer =></span>( Figma )</p>
-  <p><span>Graphic Designer =></span>( Coreldraw, Photoshop )</p>
+  <p><span>Brand Designer =></span>( Coreldraw, Photoshop )</p>
   <p><span>Chemist =></span>( Synthetic Chemist )</p>
   </div>
   </div>
